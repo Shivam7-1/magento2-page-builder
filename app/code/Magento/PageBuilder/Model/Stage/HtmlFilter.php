@@ -98,7 +98,7 @@ class HtmlFilter
      */
     private function getChildrenInnerHtml(\DOMElement $element): string
     {
-        $innerHTML = '';
+        $innerText = '';
         $childrenIterator = $element->childNodes->getIterator();
         while ($childrenIterator->valid()) {
             $child = $childrenIterator->current();
