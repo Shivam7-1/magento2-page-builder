@@ -112,9 +112,9 @@ class HtmlFilter
                 $childrenIterator->next();
                 continue;
             }
-            $innerHTML .= $ownerDocument->saveXML($child);
+            $innerText .= $ownerDocument->saveXML($child);
             $childrenIterator->next();
         }
-        return $innerHTML;
+        return $innerText;
     }
 }
