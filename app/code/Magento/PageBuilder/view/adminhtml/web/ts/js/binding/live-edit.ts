@@ -33,8 +33,8 @@ function stripHtml(html: string) {
  * @param {Element} element
  */
 function handlePlaceholderClass(element: Element) {
-    if (stripHtml(element.innerHTML).length === 0) {
-        element.innerHTML = "";
+    if (stripHtml(element.innerText).length === 0) {
+        element.innerText = "";
         element.classList.add("placeholder-text");
     } else {
         element.classList.remove("placeholder-text");
